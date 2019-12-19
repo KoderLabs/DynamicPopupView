@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicPopupVw" customModule="DynamicPopupViewSwift" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicPopupVw" customModule="DynamicPopupView" customModuleProvider="target">
             <connections>
                 <outlet property="contentTxtVw" destination="TgJ-8L-4de" id="Lbq-Xp-dGw"/>
                 <outlet property="contentVw" destination="82M-9u-JYd" id="Lwh-kN-4U3"/>
@@ -63,13 +63,13 @@
                                 </label>
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" scrollEnabled="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TgJ-8L-4de">
                                     <rect key="frame" x="24" y="187.5" width="366" height="37.5"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis  Lorem ipsum dolor sit amet, </string>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="TgJ-8L-4de" secondAttribute="bottom" constant="10" id="7B8-BC-eQq"/>
                                 <constraint firstItem="C3C-6D-8mL" firstAttribute="top" secondItem="beo-yw-ENH" secondAttribute="top" constant="20" id="JsQ-ul-Vz8"/>
@@ -84,6 +84,7 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="beo-yw-ENH" secondAttribute="trailing" id="4r2-AX-pDD"/>
                         <constraint firstItem="beo-yw-ENH" firstAttribute="top" secondItem="phO-6E-oDt" secondAttribute="top" id="Dql-Ey-MPd"/>
