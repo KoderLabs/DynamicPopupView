@@ -10,7 +10,7 @@ Dynamic height pop view to accmodate lenghty content in a popup view for e.g Ter
   Customizable show and hide animation.</br>
   
 # Usage:
-  var dynamicPopUpVw : DynamicPopupVw()</br>
+  var dynamicPopUpVw = DynamicPopupVw()</br>
   dynamicPopUpVw?.delegate = self</br>
   dynamicPopUpVw?.showAnimationType = UIView.AnimationOptions.transitionCurlDown</br>
   dynamicPopUpVw?.hideAnimationType = UIView.AnimationOptions.transitionCurlUp</br>
