@@ -1,7 +1,8 @@
 # DynamicPopupView
 Dynamic height pop view to accmodate lenghty content in a popup view for e.g Terms and Conditions with scroll support. 
 
-![Alt text](demo.gif?raw=true "Title")
+![Alt text](demo.gif?raw=true "Lengthy content")
+![Alt text](demo2.gif?raw=true "Less content")
 
 # Features
   It automatically manages its height. Max height is the height of the device with 20 padding from top and bottom. </br>
