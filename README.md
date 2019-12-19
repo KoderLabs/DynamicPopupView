@@ -21,11 +21,11 @@ Dynamic height pop view to accmodate lenghty content in a popup view for e.g Ter
   dynamicPopUpVw?.delayToAnimate = 1</br>
   dynamicPopUpVw?.titleLbl.text = "Terms and Conditions"</br>
   dynamicPopUpVw?.contentTxtVw.text = "Terms and Conditions"</br>
-  Show</br>
+  # Show
   dynamicPopUpVw.show(view:self.view)</br>
-  Hide</br>
+  # Hide
   dynamicPopUpVw.hide()</br>
-  Delegate</br>
+  # Delegate
   DynamicPopupVwProtocol</br>
   func termAccepted()</br></br>
   func termDeclined()</br>
