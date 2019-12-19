@@ -72,7 +72,7 @@ class DynamicPopupVw: UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
         contentVw.translatesAutoresizingMaskIntoConstraints = false
         let maxHeight = self.superview?.frame.size.height
-        self.addConstraint(NSLayoutConstraint.init(item: self, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.lessThanOrEqual, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: maxHeight ?? 100))
+        self.addConstraint(NSLayoutConstraint.init(item: self, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: maxHeight ?? 100))
         
         self.superview?.addConstraint(NSLayoutConstraint.init(item: self, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.superview, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1.0, constant: 20))
         
@@ -80,7 +80,7 @@ class DynamicPopupVw: UIView {
         
         self.superview?.addConstraint(NSLayoutConstraint.init(item: self, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.superview, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1.0, constant: 0))
         
-        self.superview?.addConstraint(NSLayoutConstraint.init(item: self, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.superview, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 20))
+        self.superview?.addConstraint(NSLayoutConstraint.init(item: self, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.greaterThanOrEqual, toItem: self.superview, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 20))
         
         contentVw.addConstraint(NSLayoutConstraint.init(item: contentVw!, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.lessThanOrEqual, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: maxHeight ?? 100))
         
@@ -90,7 +90,7 @@ class DynamicPopupVw: UIView {
         
         self.superview?.addConstraint(NSLayoutConstraint.init(item: contentVw!, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.superview, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1.0, constant: 0))
         
-        self.superview?.addConstraint(NSLayoutConstraint.init(item: contentVw!, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.superview, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 20))
+        self.superview?.addConstraint(NSLayoutConstraint.init(item: contentVw!, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.greaterThanOrEqual, toItem: self.superview, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: 20))
     }
     
     
