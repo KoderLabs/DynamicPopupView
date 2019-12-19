@@ -29,8 +29,7 @@ class ViewController: UIViewController,DynamicPopupVwProtocol{
     }
 
     @IBAction func showPopUp(_ sender: Any) {
-        self.view.addSubview(dynamicPopUpVw!)
-        dynamicPopUpVw?.showView()
+        dynamicPopUpVw?.showView(view: self.view)
     }
     
     func termAccepted() {

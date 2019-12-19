@@ -51,7 +51,8 @@ class DynamicPopupVw: UIView {
         }
     }
     
-    func showView(){
+    func showView(view:UIView){
+        view.addSubview(self)
         UIView.transition(with: contentVw, duration: delayToAnimate!, options: showAnimationType!, animations: {
             self.contentVw.alpha = 1
         }) { (Bool) in
